@@ -14,6 +14,7 @@ node_modules/
 .tmp/
 
 # OS or Editor folders
+.idea
 .DS_Store
 Thumbs.db
 .cache
