@@ -15,7 +15,7 @@ class RevealOnScroll {
 	}
 
 	createWaypoints() {
-		let that = this.offsetPercentage;
+		let offset = this.offsetPercentage;
 		this.itemsToReveal.each(function() {
 			let currentItem = this;
 
@@ -24,7 +24,7 @@ class RevealOnScroll {
 				handler: function() {
 					$(currentItem).addClass("reveal-item--is-visible");
                 },
-				offset: that
+				offset: offset
 			});
         });
 	}
